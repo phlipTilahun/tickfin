@@ -1,0 +1,8 @@
+to push to heroku
+   git add .
+   git commit -m ""
+   git push heroku master
+to push to github   
+   git add .
+   git commit -m ""
+   git push origin master

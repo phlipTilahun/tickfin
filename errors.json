@@ -1,0 +1,390 @@
+{
+    "errors": {
+        "getEventErrors" : {
+            "limit": {
+                "message": "Parameter data type mismatch",
+                "details": "page parameter should be integer"
+            },
+            "page": {
+                "message": "Parameter data type mismatch",
+                "details": "page should be integer"
+            },
+            "evst": {
+                "message": "Parameter data type mismatch",
+                "details": "evst should be one of 'SCHEDULED', 'STOPPED', 'ON-HOLD', 'IN-PROGRESS',    'COMPLETED', 'CANCELLED'"
+            },
+            "tkst": {
+                "message": "Parameter data type mismatch",
+                "details": "tkst should be one of 'SCHEDULED', 'OPEN', 'CLOSED'"
+            },
+            "ven": {
+                "message": "Parameter data type mismatch",
+                "details": "ven should be integer"
+            },
+            "ha": {
+                "message": "Parameter data type mismatch",
+                "details": "ha should be integer"
+            },
+            "name": {
+                "message": "Parameter data type mismatch",
+                "details": "name should be string"
+            },
+            "desc": {
+                "message": "Parameter data type mismatch",
+                "details": "desc should be one of 'true' or 'false'"
+            }
+        },
+        "postEventErrors": {
+            "Property datatype error":{
+                "eventName": {
+                    "message" : "Property datatype error",
+                    "details" : "eventName should be a string"
+                },
+                "eventDesc": {
+                    "message" : "Property datatype error",
+                    "details" : "eventDescription should be string"
+                },
+                "startDate": {
+                    "message" : "Property datatype error",
+                    "details" : "startDate should be string"
+                },
+                "endDate": {
+                    "message" : "Property datatype error",
+                    "details" : "endDate should be string"
+                },
+                "startTime": {
+                    "message" : "Property datatype error",
+                    "details" : "startTime should be string"
+                },
+                "endTime": {
+                    "message" : "Property datatype error",
+                    "details" : "endTime should be string"
+                },
+                "eventStatus": {
+                    "message" : "Property datatype error",
+                    "details" : "eventStatus should be one of 'SCHEDULED', 'STOPPED', 'ON-HOLD', 'INPROGRESS','COMPLETED', 'CANCELLED'"
+                },
+                "tickStat": {
+                    "message" : "Property datatype error",
+                    "details" : "tickStat should be one of 'SCHEDULED', 'OPEN', 'CLOSED'"
+                },
+                "hallId": {
+                    "message" : "Property datatype error",
+                    "details" : "hallId should be integer"
+                },
+                "eventId": {
+                    "message" : "Property datatype error",
+                    "details" : "eventId svenueIdhould be integer"
+                }
+            },
+            "Invalid property":{
+               "eventName": {
+                    "message" : "Invalid property",
+                    "details" : "eventName should not exceed 20 characters"
+               },
+               "startDate":{
+                    "message" : "Invalid property",
+                    "details" : "startDate should be in the format 'MM-DD-YY'"
+               },
+               "endDate": {
+                    "message" : "Invalid property",
+                    "details" : "endDate should be in the format 'MM-DD-YY'"
+               },
+               "startTime": {
+                    "message" : "Invalid property",
+                    "details" : "startTime should be in the format 'HH-MM-SS'"
+               },
+               "endTime": {
+                    "message" : "Invalid property",
+                    "details" : "endTime should be in the format 'HH-MM-SS'"
+               }
+            },
+            "Missing property":{
+                "eventId" : {
+                    "message" : "Missing property",
+                    "details" : "Missing eventId property"
+                },
+                "eventName": {
+                    "message" : "Missing property",
+                    "details" : "Missing eventName property"
+                },
+                "eventDesc": {
+                    "message" : "Missing property",
+                    "details" : "Missing eventDescription property"
+                },
+                "startDate": {
+                    "message" : "Missing property",
+                    "details" : "Missing startDate property"
+                },
+                "endDate": {
+                    "message" : "Missing property",
+                    "details" : "Missing endDate property"
+                },
+                "startTime": {
+                    "message" : "Missing property",
+                    "details" : "Missing startTime property"
+                },
+                "endTime": {
+                    "message" : "Missing property",
+                    "details" : "Missing endTime property"
+                },
+                "eventStatus": {
+                    "message" : "Missing property",
+                    "details" : "Missing eventStatus property"
+                },
+                "tickStat": {
+                    "message" : "Missing property",
+                    "details" : "Missing tickStat proerty"
+                },
+                "hallId":{
+                    "message" : "Missing property",
+                    "details" : "Missing hallId property"
+                },
+                "venueId": {
+                    "message" : "Missing property",
+                    "details" : "Missing venueId property"
+                }
+            }
+        },
+        "getVenueErrors": {
+            "limit": {
+                "message": "Parameter data type mismatch",
+                "details": "page parameter should be integer"
+            },
+            "page": {
+                "message": "Parameter data type mismatch",
+                "details": "page should be integer"
+            },
+            "desc": {
+                "message": "Parameter data type mismatch",
+                "details": "desc should be one of 'true' or 'false'"
+            }
+        },
+        "postVenueErrors": {
+            "Property datatype error":{
+                "venueId": {
+                    "message" : "Property datatype error",
+                    "details" : "venueId should be a integer"
+                },
+                "name": {
+                    "message" : "Property datatype error",
+                    "details" : "name should be string"
+                },
+                "address": {
+                    "message" : "Property datatype error",
+                    "details" : "address should be string"
+                }
+            },
+            "Invalid property":{
+               "location": {
+                    "message" : "Invalid property",
+                    "details" : "location should not exceed 100 characters"
+               },
+               "name":{
+                    "message" : "Invalid property",
+                    "details" : "name should not exceed 20 characters"
+               }
+            },
+            "Missing property":{
+                "venueId" : {
+                    "message" : "Missing property",
+                    "details" : "Missing venueId property"
+                },
+                "name": {
+                    "message" : "Missing property",
+                    "details" : "Missing name property"
+                },
+                "location": {
+                    "message" : "Missing property",
+                    "details" : "Missing location property"
+                }
+            }
+        },
+        "getHallErrors": {
+            "desc": {
+                "message": "Parameter data type mismatch",
+                "details": "desc should be one of 'true' or 'false'"
+            },
+            "limit": {
+                "message": "Parameter data type mismatch",
+                "details": "page parameter should be integer"
+            },
+            "page": {
+                "message": "Parameter data type mismatch",
+                "details": "page should be integer"
+            },
+            "ven": {
+                "message": "Parameter data type mismatch",
+                "details": "ven should be integer"
+            }
+        },
+        "postHallErrors": {
+            "Property datatype error":{
+                "venueId": {
+                    "message" : "Property datatype error",
+                    "details" : "venueId should be a integer"
+                },
+                "name": {
+                    "message" : "Property datatype error",
+                    "details" : "name should be string"
+                },
+                "capacity": {
+                    "message" : "Property datatype error",
+                    "details" : "capacity should be integer"
+                },
+                "hallId": {
+                    "message" : "Property datatype error",
+                    "details" : "hallId should be a integer"
+                }
+            },
+            "Invalid property":{
+               "name":{
+                    "message" : "Invalid property",
+                    "details" : "name should not exceed 20 characters"
+               }
+            },
+            "Missing property":{
+                "venueId" : {
+                    "message" : "Missing property",
+                    "details" : "Missing venueId property"
+                },
+                "name": {
+                    "message" : "Missing property",
+                    "details" : "Missing name property"
+                },
+                "hallId" : {
+                    "message" : "Missing property",
+                    "details" : "Missing hallId property"
+                },
+                "capacity" : {
+                    "message" : "Missing property",
+                    "details" : "Missing capacity property"                    
+                }
+            }
+        },
+        "getChartErrors": {
+            "limit": {
+                "message": "Parameter data type mismatch",
+                "details": "page parameter should be integer"
+            },
+            "page": {
+                "message": "Parameter data type mismatch",
+                "details": "page should be integer"
+            },
+            "desc": {
+                "message": "Parameter data type mismatch",
+                "details": "desc should be one of 'true' or 'false'"
+            },
+            "ha": {
+                "message": "Parameter data type mismatch",
+                "details": "ha should be integer"
+            }
+        },
+        "postChartErrors": {
+            "Property datatype error":{
+
+            },
+            "Invalid property":{
+
+            },
+            "Missing property":{
+
+            }
+        },
+        "getEventReportErrors": {
+            "limit": {
+                "message": "Parameter data type mismatch",
+                "details": "page parameter should be integer"
+            },
+            "page": {
+                "message": "Parameter data type mismatch",
+                "details": "page should be integer"
+            },
+            "desc": {
+                "message": "Parameter data type mismatch",
+                "details": "desc should be one of 'true' or 'false'"
+            },
+            "ha": {
+                "message": "Parameter data type mismatch",
+                "details": "ha should be integer"
+            },
+            "ev": {
+                "message": "Parameter data type mismatch",
+                "details": "ev should be integer"
+            },
+            "ven": {
+                "message": "Parameter data type mismatch",
+                "details": "ven should be integer"
+            }
+        },
+        "postTicketErrors": {
+            "Property datatype error":{
+                "eventId": {
+                    "message" : "Property datatype error",
+                    "details" : "eventId svenueIdhould be integer"
+                },
+                "eventName": {
+                    "message" : "Property datatype error",
+                    "details" : "eventName should be a string"
+                },
+                "date": {
+                    "message" : "Property datatype error",
+                    "details" : "date should be string"
+                },
+                "time": {
+                    "message" : "Property datatype error",
+                    "details" : "time should be string"
+                },
+                "hallName": {
+                    "message" : "Property datatype error",
+                    "details" : "hallName should be integer"
+                },
+                "seatnum" : {
+                    "message" : "Property datatype error",
+                    "details" : "seatnum should be string"
+                }
+            },
+            "Invalid property":{
+               "hallName": {
+                    "message" : "Invalid property",
+                    "details" : "hallName should not exceed 20 characters"
+               },
+               "eventName": {
+                    "message" : "Invalid property",
+                    "details" : "eventName should not exceed 20 characters"
+               },
+               "venueName": {
+                    "message" : "Invalid property",
+                    "details" : "venueName should not exceed 20 characters"
+               },               
+               "date":{
+                    "message" : "Invalid property",
+                    "details" : "date should be in the format 'MM-DD-YY'"
+               },
+               "time": {
+                    "message" : "Invalid property",
+                    "details" : "time should be in the format 'HH-MM-SS'"
+               }
+            },
+            "Missing property":{
+                "hallName": {
+                    "message" : "Missing property",
+                    "details" : "Missing hallName property"
+                },
+                "eventName": {
+                    "message" : "Missing property",
+                    "details" : "Missing eventName property"
+                },
+                "date": {
+                    "message" : "Missing property",
+                    "details" : "Missing date property"
+                },
+                "time": {
+                    "message" : "Missing property",
+                    "details" : "Missing time property"
+                }
+            }
+        },
+        "notFound" : "Not found"
+    }
+}

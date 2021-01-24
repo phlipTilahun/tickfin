@@ -1,0 +1,5 @@
+- how should chart schema be represented
+- when a chart is created using the creater tool and is saved the tool will send a post request to the api with body {name of chart, json file}
+
+
+- post and put verify appropriate json before processing
